@@ -1,0 +1,96 @@
+.MuiIconButton-root:focus, .MuiIconButton-root:focus-visible {
+  outline: none;
+}
+
+.navbar-item {
+  position: relative;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%; /* Position the dropdown below the button */
+  background-color: #1D1D1D;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.2s ease-in-out;
+  z-index: 1;
+}
+
+.navbar-item .dropdown.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
+.navbar-item:hover .dropdown {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Arrow styles */
+.menu-items > button .arrow {
+  margin-left: 5px;
+  transition: transform 0.2s ease;
+}
+
+.dropdown.show > .arrow {
+  transform: rotate(90deg);
+  visibility: visible;
+}
+
+
+
+/* Main dropdown styles */
+.dropdown {
+  position: absolute;
+  top: 100%; /* Below parent */
+  left: 0;
+  background-color: #1D1D1D;
+  z-index: 10;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.2s ease-in-out;
+}
+
+.navbar-item:hover .dropdown {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Submenu positioning */
+.sub-dropdown {
+  position: absolute;
+  top: 0;
+  left: 100%; /* Position to the right of parent */
+  background-color: #1D1D1D;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.2s ease-in-out;
+}
+
+.submenu-item:hover .sub-dropdown {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Submenu item hover effect */
+.submenu-item:hover > .MuiListItemButton-root {
+  color: #004792;
+}
+.navbar-mid {
+  background-color: #fff;
+  padding: 10px;
+}
+
+.menus {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+}
+
+
+

@@ -1,0 +1,65 @@
+
+
+video {
+  padding-top: 60px; /* Matches the margin of MainContent */
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.MainContent {
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.LeftSection, .RightSection {
+  width: 40%;
+  flex: 1;
+}
+
+.LeftSection {
+  margin-left: 10px;
+}
+
+.RightSection {
+  margin-top: 80px;
+}
+
+.carousel-container {
+  display: flex;
+  transition: transform 1s ease-in-out;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.h2 {
+  font-size: 38px;
+  margin-left: 15px;
+  margin-bottom: 20px;
+  color: white;
+  font-weight: bold;
+}
+.home{
+  display: flex ;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  right: 0;
+  left: 0;
+}
+
+
+
+
+  
+  
